@@ -1,0 +1,32 @@
+<div id="scene">
+  <div id="flash"></div>
+  <div id="container">
+    <div id="ring-wrap">
+      <svg id="svg-ring" viewBox="0 0 420 420">
+        <defs>
+          <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FFD700"/>
+            <stop offset="50%" stop-color="#FF7A00"/>
+            <stop offset="100%" stop-color="#FF3300"/>
+          </linearGradient>
+        </defs>
+        <circle id="progress-circle" cx="210" cy="210" r="200"
+          fill="none" stroke="url(#ringGrad)" stroke-width="6"
+          stroke-dasharray="1257" stroke-dashoffset="1257" stroke-linecap="round"/>
+      </svg>
+      <svg id="radar-svg" viewBox="0 0 420 420">
+        <defs>
+          <radialGradient id="radarGrad" cx="50%" cy="50%">
+            <stop offset="0%" stop-color="#FF7A00" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#FF7A00" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <path id="radar-sweep" d="" fill="url(#radarGrad)"/>
+      </svg>
+      <div id="glow-ring"></div>
+      <img id="logo" src="https://i.imgur.com/iSAfC7n.png" />
+    </div>
+    <div id="sub-name">NEW SUBSCRIBER</div>
+  </div>
+</div>
+<audio id="sub-sound" preload="auto" src="https://raw.githubusercontent.com/fipolak/poraktv-sub-alert/main/you-sob-arnold.mp3"></audio>
